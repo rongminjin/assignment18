@@ -22,10 +22,10 @@ void handler::addToMyqueue(customer input) {
 }
 
 void handler::setBeginTime(int input) {
-    myqueue.front().sBeginTime = input;
+    myqueue.front().setServiceBeginTime(input);
 }
 
-void handler::popOfMyqueue() {
+void handler::popOffMyqueue() {
     myqueue.pop();
 }
 
