@@ -14,15 +14,55 @@ using namespace std;
 
 
 class customer {
-public:
+private:
     int arrivalTime;
-    int sBeginTime;
-    int sEndTime;
-    int sTime;
-    int total_sTime;
-    
+    int serviceBeginTime;
+    int serviceEndTime;
+    int serviceTime;
+    int totalServiceTime;
+
+public:
     customer();
-    
+
+    int getArrivalTime() const {
+        return arrivalTime;
+    }
+
+    int getServiceBeginTime() const {
+        return serviceBeginTime;
+    }
+
+    int getServiceEndTime() const {
+        return serviceEndTime;
+    }
+
+    int getServiceTime() const {
+        return serviceTime;
+    }
+
+    int getTotalServiceTime() const {
+        return totalServiceTime;
+    }
+
+    void setArrivalTime(int arrivalTime) {
+        customer::arrivalTime = arrivalTime;
+    }
+
+    void setServiceBeginTime(int serviceBeginTime) {
+        customer::serviceBeginTime = serviceBeginTime;
+    }
+
+    void setServiceEndTime(int serviceEndTime) {
+        customer::serviceEndTime = serviceEndTime;
+    }
+
+    void setServiceTime(int serviceTime) {
+        customer::serviceTime = serviceTime;
+    }
+
+    void setTotalServiceTime(int totalServiceTime) {
+        customer::totalServiceTime = totalServiceTime;
+    }
 };
 
 #endif /* customer_hpp */

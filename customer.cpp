@@ -7,17 +7,20 @@
 //
 
 #include "Header.h"
+#include "customer.hpp"
+
 
 customer::customer() {
     arrivalTime = 0;
-    sBeginTime = 0;
-    sEndTime = 0;
-    sTime = 0;
-    total_sTime = 0;
+    serviceBeginTime = 0;
+    serviceEndTime = 0;
+    serviceTime = 0;
+    totalServiceTime = 0;
 }
 
+
 bool operator<(const customer &s1, const customer &s2){
-    return s1.total_sTime < s2.total_sTime;
+    return s1.getTotalServiceTime() < s2.getTotalServiceTime();
 }
 
 
